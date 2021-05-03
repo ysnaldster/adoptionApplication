@@ -56,16 +56,62 @@ main .category-container .category-icons .dog_icon {
   margin-right: 16px;
 }
 
-main .prueba1 {
-  font-size: 2.5rem;
-}
-
-.prueba1 {
+.cards_perros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
+
+.cards_perros .Chester {
+  margin-right: 15px;
+}
+
+.cards_perros .Papi {
+  padding-top: 50px;
+}
+
+.cards_perros .Rocky {
+  margin-right: 15px;
+}
+
+.cards_perros .Pelusa {
+  padding-top: 30px;
+}
+
+.cards_gatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
+
+.cards_gatos .Matilde {
+  margin-right: 15px;
+}
+
+.cards_gatos .Pelusa {
+  padding-top: 50px;
+}
+
+.cards_gatos .Kity {
+  margin-right: 15px;
+}
+
+.cards_gatos .Bombon {
+  padding-top: 30px;
 }
 
 #footer-container {

@@ -68,19 +68,50 @@ main{
             }
         }
     }
-    .prueba1{
-        font-size: 2.5rem;
-    }
 }
 
 
 //Pruebas para cards
 
-.prueba1{
+.cards_perros{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 100px;
+    .Chester{
+        margin-right: 15px;
+    }
+    .Papi{
+        padding-top: 50px;
+    }
+    .Rocky{
+        margin-right: 15px;
+    }
+    .Pelusa{
+        padding-top: 30px;
+    }
 }
 
+.cards_gatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 100px;
+    .Matilde{
+        margin-right: 15px;
+    }
+    .Pelusa{
+        padding-top: 50px; 
+    }
+    .Kity{
+        margin-right: 15px;
+    }
+    .Bombon{
+        padding-top: 30px;
+    }
+}
 
 
 
