@@ -1,0 +1,146 @@
+$primary: #FEC7D7;
+$black: #0E172C;
+$white: #FFFFFE;
+$secondary: #A786DF;
+$tertiary: #D9D4E7;
+$green: #85D1CE;
+$blue: #91C1D7;
+$grey: #535353;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+@mixin dimensiones {
+    width: 24px;
+    height: 24px;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+}
+
+// Clases para eventos
+.opacity_activa{
+    opacity: 1;
+}
+
+.opacity_inactiva{
+    opacity: 0.5;
+}
+
+// Home Section
+
+body{
+    background-color: $primary;
+}
+
+    // Header
+.home-title-container{
+    width: auto;
+    height: 66px;
+    margin: 48px 24px 32px 24px;
+    color: $black;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 32.74px;
+}
+
+
+main{
+    .category-container{
+        margin: 0 24px;
+        height: 113px;
+        width: auto;
+        .category-title{
+            font-size: 1.8rem;
+            line-height: 24.55px;
+            color: $black;
+            font-style: normal;
+        }
+        .category-icons{
+            display: flex;
+            margin: 8px 0;
+            .dog_icon{
+                margin-right: 16px;
+            }
+        }
+    }
+    .prueba1{
+        font-size: 2.5rem;
+    }
+}
+
+
+//Pruebas para cards
+
+.prueba1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+#footer-container{
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    padding-bottom: 16px;
+    z-index: 2000;
+    background-color: $white;
+    .footer-container-navegation{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            margin: 24px 0px;
+        }
+        .home{
+            background-image: url("/imagenes/home.svg");
+            @include dimensiones();
+        }
+        .home:hover{
+            background-image: none;
+            background-image: url("/imagenes/home_hover.svg");
+            width: 102px;
+            height: 40px;
+        }
+        // .chat{
+        //     background-image: url(/imagenes/chat.svg);
+        //     @include dimensiones();
+        // }
+        // .chat:hover{
+        //     background-image: url(/imagenes/messege.svg);
+        //     width: 124px;
+        //     height: 40px;
+        // }
+        // .love{
+        //     background-image: url(/imagenes/love.svg);
+        //     width: 24px;
+        //     height: 24px;
+        // }
+        // .love:hover{
+        //     background-image: url(/imagenes/favoritos.svg);
+        //     width: 122px;
+        //     height: 40px;
+        // }
+        // .perfil{
+        //     background-image: url(/imagenes/perfil.svg);
+        //     width: 24px;
+        //     height: 24px;
+        // }
+        // .perfil:hover{
+        //     background-image: url(/imagenes/profi.svg);
+        //     width: 98px;
+        //     height: 40px;
+        // }
+    }
+}
+
+

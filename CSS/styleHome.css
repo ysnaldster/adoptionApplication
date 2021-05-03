@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+}
+
+.opacity_activa {
+  opacity: 1;
+}
+
+.opacity_inactiva {
+  opacity: 0.5;
+}
+
+body {
+  background-color: #FEC7D7;
+}
+
+.home-title-container {
+  width: auto;
+  height: 66px;
+  margin: 48px 24px 32px 24px;
+  color: #0E172C;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 32.74px;
+}
+
+main .category-container {
+  margin: 0 24px;
+  height: 113px;
+  width: auto;
+}
+
+main .category-container .category-title {
+  font-size: 1.8rem;
+  line-height: 24.55px;
+  color: #0E172C;
+  font-style: normal;
+}
+
+main .category-container .category-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0;
+}
+
+main .category-container .category-icons .dog_icon {
+  margin-right: 16px;
+}
+
+main .prueba1 {
+  font-size: 2.5rem;
+}
+
+.prueba1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer-container {
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  padding-bottom: 16px;
+  z-index: 2000;
+  background-color: #FFFFFE;
+}
+
+#footer-container .footer-container-navegation {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer-container .footer-container-navegation a {
+  margin: 24px 0px;
+}
+
+#footer-container .footer-container-navegation .home {
+  background-image: url("/imagenes/home.svg");
+  width: 24px;
+  height: 24px;
+}
+
+#footer-container .footer-container-navegation .home:hover {
+  background-image: none;
+  background-image: url("/imagenes/home_hover.svg");
+  width: 102px;
+  height: 40px;
+}
+/*# sourceMappingURL=style_dos.css.map */
