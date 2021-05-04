@@ -1,20 +1,17 @@
 'use strict'
-class mascota{
-    constructor(categoria,nombre,raza,edad){
-        this.categoria = categoria;
-        this.nombre = nombre;
-        this.raza = raza;
-        this.edad = edad;
-    }
-}
+
+import mascota from './estructuras.js'
+
+
 
 const perros = [];
-perros.push(new mascota('perro', 'Chester', 'Golden retriever', '3 Meses'), new mascota('perro', 'Papi', 'Chihuahua', '4 Meses'), new mascota('perro', 'Rocky', 'Rottweiler', '5 Meses'), new mascota('perro', 'Pelusa', 'Bichón frisé', '1 Año'));
 const gatos = []
-gatos.push(new mascota('gato', 'Matilde', 'British Shorthair', '6 Meses'), new mascota('gato', 'Pelusa', 'Birmano', '1 Año'), new mascota('gato', 'Kity', 'Bombay', '2 Meses'), new mascota('gato', 'Bombon', 'Gato Americano', '4 Meses'));
+
+
+perros.push(new mascota('perro', 'Chester', 'Golden retriever', '3 Meses', './imagenes/masculino.png'), new mascota('perro', 'Papi', 'Chihuahua', '4 Meses', './imagenes/masculino.png'), new mascota('perro', 'Rocky', 'Rottweiler', '5 Meses', './imagenes/masculino.png'), new mascota('perro', 'Pelusa', 'Bichón frisé', '1 Año', './imagenes/femenino.png'));
+gatos.push(new mascota('gato', 'Matilde', 'British Shorthair', '6 Meses', './imagenes/femenino.png'), new mascota('gato', 'Pelusa', 'Birmano', '1 Año', './imagenes/femenino.png'), new mascota('gato', 'Kity', 'Bombay', '2 Meses', './imagenes/femenino.png'), new mascota('gato', 'Bombon', 'Gato Americano', '4 Meses', './imagenes/femenino.png'));
 
 // Funciones para opacidad de botones
-
 const dispararOpacidadGato = () => {
     cat_boton.classList.remove('opacity_inactiva');
     cat_boton.classList.add('.opacity_activa');
@@ -73,19 +70,14 @@ const dibujarGatos = () =>{
     document.querySelector(".mascota4").classList.add('Bombon');
 }
 
-const ocultarSeccion = () => {
-    // document.querySelector('.home-title-container').style.display = 'none';
-    // document.querySelector('.main-container').style.display = 'none';
-    // document.querySelector('.cards-mascotas').style.display = 'none';
-    // document.querySelector('#footer-container').style.display = 'none';
-}
+
 
 
 // Botones con opacity
 
-const imagenes_perros = ['/imagenes/chester.svg', '/imagenes/papi.svg', '/imagenes/rocky.svg','/imagenes/pelusa.svg']
+const imagenes_perros = ['./imagenes/chester.svg', './imagenes/papi.svg', './imagenes/rocky.svg','./imagenes/pelusa.svg']
 
-const imagenes_gatos = ['/imagenes/matilde.png', '/imagenes/pelusa.png', '/imagenes/kity.png', '/imagenes/bombon.png'];
+const imagenes_gatos = ['./imagenes/matilde.png', './imagenes/pelusa.png', './imagenes/kity.png', './imagenes/bombon.png'];
 const dog_boton = document.querySelector('.dog_icon');
 const cat_boton = document.querySelector('.cat_icon');
 
@@ -104,8 +96,8 @@ cards_gatos.addEventListener("click", dibujarGatos);
 
 
 let pruebas = [];
-
-const descripcionChester = () => {
+let imagenGrande;
+const descripcionMascota = () => {
     document.querySelector('.home-title-container').style.display = 'none';
     document.querySelector('.main-container').style.display = 'none';
     document.querySelector('.cards-mascotas').style.display = 'none';
@@ -117,17 +109,17 @@ const descripcionChester = () => {
         <img src = '/imagenes/back.png'>
     </a>
     <header class = "imagen-grande-mascota">
-            <img  src = '/imagenes/rocky-grande.png'>
+            <img  src = ${imagenGrande}>
         </header>
         <main class = 'mascota-container'>
             <div class = "informacion-container"> 
                 <div class = "title-container"> 
                     <div>${pruebas[0].nombre} 
                     </div>
-                    <img  src = '/imagenes/masculino.png'>
+                    <img  src = ${pruebas[0].sexo}>
                 </div>
                 <div class = "icono-favoritos">
-                    <img src = '/imagenes/favoritos-circulo.png'>  
+                    <img src = './imagenes/favoritos-circulo.png'>  
                 </div>
             </div>
             <div class = "title-container-two">
@@ -139,22 +131,22 @@ const descripcionChester = () => {
                 </div>
                 <div class = 'edad-container'>
                     <div> 
-                        <img src = '/imagenes/mascota-peque.png'>
+                        <img src = './imagenes/mascota-peque.png'>
                     </div>
                     <div class = "title-container"> ${pruebas[0].edad}</div>
                 </div>
             </div>
             <div class = 'ubication-container'> 
-                <img src = '/imagenes/ubicacion.png'>
+                <img src = './imagenes/ubicacion.png'>
                 <div>4140 Parker Rd. Allentown, </br>
                 New Mexico 31134</div>
             </div>
             <div class = 'personalidades-container'>
                 <div class = 'personalidad-title'> Personalidad </div>
                 <div class = 'personalidades-img'>
-                    <img src = '/imagenes/cariñoso.png' style = "padding-right: 24px;">
-                    <img src = '/imagenes/inquieto.png' style = "padding-right: 24px;">
-                    <img src = '/imagenes/jugueton.png'>
+                    <img src = './imagenes/cariñoso.png' style = "padding-right: 24px;">
+                    <img src = './imagenes/inquieto.png' style = "padding-right: 24px;">
+                    <img src = './imagenes/jugueton.png'>
                 </div>
             </div>
             <div class = 'description-container'>
@@ -163,7 +155,7 @@ const descripcionChester = () => {
             </div>
             <div class = 'contacto-description'>
                 <div class = 'persona-description'>
-                    <img src = '/imagenes/mifoto.jpg' width = '42px' height = '42px'>
+                    <img src = './imagenes/mifoto.jpg' width = '42px' height = '42px'>
                     <div> 
                         <span class = 'publicado-por'>Publicado por </span>
                         <span class = 'name-publicacion'> Ysnaldo Lopez </span>
@@ -182,45 +174,53 @@ const descripcionChester = () => {
 
 const mascotas1 = () => {
     if(mascota1.classList.contains('Chester')){
-        pruebas.push(new mascota('perro', 'Chester', 'Golden retriever', '3 Meses'))
-        descripcionChester();
+        pruebas.push(new mascota('perro', 'Chester', 'Golden retriever', '3 Meses', './imagenes/masculino.png'))
+        imagenGrande = './imagenes/rocky-grande.png';
+        descripcionMascota();
     }
     else if(mascota1.classList.contains('Matilde')){
-        pruebas.push(new mascota('gato', 'Matilde', 'British Shorthair', '6 Meses'))
-        descripcionChester();
+        pruebas.push(new mascota('gato', 'Matilde', 'British Shorthair', '6 Meses', './imagenes/femenino.png'))
+        imagenGrande = './imagenes/gato-grande.png'
+        descripcionMascota();
     }
 }
 
 const mascotas2 = () => {
     if(mascota2.classList.contains('Papi')){
-        pruebas.push(new mascota('perro', 'Papi', 'Chihuahua', '4 Meses'));
-        descripcionChester();
+        pruebas.push(new mascota('perro', 'Papi', 'Chihuahua', '4 Meses', './imagenes/masculino.png'));
+        imagenGrande = './imagenes/rocky-grande.png';
+        descripcionMascota();
     }
     else if(mascota2.classList.contains('Pelusa')){
-        pruebas.push(new mascota('gato', 'Pelusa', 'Birmano', '1 Año'))
-        descripcionChester();
+        pruebas.push(new mascota('gato', 'Pelusa', 'Birmano', '1 Año', './imagenes/femenino.png'))
+        imagenGrande = './imagenes/gato-grande.png'
+        descripcionMascota();
     }
 }
 
 const mascotas3 = () => {
     if(mascota3.classList.contains('Rocky')){
-        pruebas.push(new mascota('perro', 'Rocky', 'Rottweiler', '5 Meses'));
-        descripcionChester();
+        pruebas.push(new mascota('perro', 'Rocky', 'Rottweiler', '5 Meses', './imagenes/masculino.png'));
+        imagenGrande = './imagenes/rocky-grande.png';
+        descripcionMascota();
     }
     else if(mascota3.classList.contains('Kity')){
-        pruebas.push(new mascota('gato', 'Kity', 'Bombay', '2 Meses'))
-        descripcionChester();
+        pruebas.push(new mascota('gato', 'Kity', 'Bombay', '2 Meses', './imagenes/femenino.png'))
+        imagenGrande = './imagenes/gato-grande.png'
+        descripcionMascota();
     }
 }
 
 const mascotas4 = () => {
     if(mascota4.classList.contains('Pelusa')){
-        pruebas.push(new mascota('perro', 'Pelusa', 'Bichón frisé', '1 Año'));
-        descripcionChester();
+        pruebas.push(new mascota('perro', 'Pelusa', 'Bichón frisé', '1 Año', './imagenes/femenino.png'));
+        imagenGrande = './imagenes/rocky-grande.png';
+        descripcionMascota();
     }
     else if(mascota4.classList.contains('Bombon')){
-        pruebas.push(new mascota('gato', 'Bombon', 'Gato Americano', '4 Meses'))
-        descripcionChester();
+        pruebas.push(new mascota('gato', 'Bombon', 'Gato Americano', '4 Meses', './imagenes/femenino.png'))
+        imagenGrande = './imagenes/gato-grande.png'
+        descripcionMascota();
     }
 }
 

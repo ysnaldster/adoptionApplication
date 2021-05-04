@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/styleperfil.css">
+    <link rel="stylesheet" href="./CSS/styleperfil.css">
     <title>AppAdopcion</title>
 </head>
 <body>
@@ -14,30 +14,27 @@
     <main>
         <div class="perfil-container">
             <div class="img-perfil-container">
-                <img src="/imagenes/perfil-img.svg">
+                <img src="./imagenes/perfil-img.svg">
             </div>
             <div class="text-perfil-container">
                 <div class="title-perfil">Juan Méndez</div>
                 <div class="edit-perfil">Editar Cuenta</div>
             </div>
         </div>
-        <form class="form-container">
-            <!-- <div>
-                <input type="text" name="" id="">
-            </div> -->
+        <form class="form-container" action="#">
             <label for="nombre">
                 <span >Nombre</span> <br>
-                <input type="text" name="nombre-usuario" id="nombre">
+                <input type="text" name="nombre-usuario" id="nombre" value="">
             </label> 
             <label for="apellido">
                 <span>Apellido</span> <br>
-                <input type="text" name="apellido-usuario" id="apellido">
+                <input type="text" name="apellido-usuario" id="apellido" value="">
             </label>
             <label for="correo">
                 <span>Correo</span> <br>
-                <input type="email" name="email-usuario" id="correo">
+                <input type="email" name="email-usuario" id="correo" value="">
             </label>
-            <button>
+            <button id="boton-envio">
                 Guardar
             </button>
         </form>
@@ -45,18 +42,19 @@
     <footer id="footer-container">
         <nav class="footer-container-navegation">
             <a href="home.html">
-                <img src="/imagenes/home.svg" class="home">
+                <img src="./imagenes/home.svg" class="home">
             </a>
             <a href="#">
-                <img src="/imagenes/mensaje.svg" class="chat">
+                <img src="./imagenes/mensaje.svg" class="chat">
             </a>
-            <a href="#">
-                <img src="/imagenes/love.svg" class="favoritos">
+            <a href="favoritos.html">
+                <img src="./imagenes/love.svg" class="favoritos">
             </a>
             <a href="perfil.html">
-                <img src="/imagenes/perfil-barra.svg" class="perfil">
+                <img src="./imagenes/perfil-barra.svg" class="perfil">
             </a>
         </nav>
     </footer>
+    <script src="./js/datos.js"></script>
 </body>
 </html>
