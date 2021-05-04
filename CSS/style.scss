@@ -73,7 +73,7 @@ body{
        @include contenidos();
        flex-direction: column;   
        .start-page-image{
-           background-image: url("./imagenes/page1.svg");
+        //    background-image: url("./imagenes/page1.svg");
            width: 327px;
            height: 327px;
            margin-bottom: 34px;
@@ -134,7 +134,7 @@ body{
         @include contenidos();
         flex-direction: column;
         .second-page-image{
-            background-image: url("./imagenes/history.svg");
+            // background-image: url("./imagenes/history.svg");
             width: 327px;
             height: 327px;
             margin-bottom: 34px;
