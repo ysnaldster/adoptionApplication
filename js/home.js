@@ -106,7 +106,7 @@ const descripcionMascota = () => {
     c.innerHTML = `
     
     <a class = 'back' href = "home.html"> 
-        <img src = './imagenes/back.png'>
+        <img src = './imagenes/atras.svg'>
     </a>
     <header class = "imagen-grande-mascota">
             <img  src = ${imagenGrande}>
@@ -124,7 +124,7 @@ const descripcionMascota = () => {
             </div>
             <div class = "title-container-two">
                 <div class = 'raza-container'>
-                    <img src = './imagenes/pergamino.png'>
+                    <img src = './imagenes/pergamino-1.svg'>
                     <div>
                         ${pruebas[0].raza}
                     </div>
