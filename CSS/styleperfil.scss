@@ -1,0 +1,109 @@
+$primary: #FEC7D7;
+$black: #0E172C;
+$white: #FFFFFE;
+$secondary: #A786DF;
+$tertiary: #D9D4E7;
+$green: #85D1CE;
+$blue: #91C1D7;
+$grey: #535353;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $primary;
+    .perfil-title-container{
+        font-size: 24px;
+        padding: 48px 24px 0px 24px;
+        font-weight: 800;
+        color: $black;
+    }
+    .perfil-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 45px;
+        .img-perfil-container{
+            padding-bottom: 5px;
+        }
+        .text-perfil-container{
+           .title-perfil{
+               font-size: 16px;
+               padding-top: 5px;
+               font-weight: 400;
+           }
+           .edit-perfil{
+               text-align: center;
+               padding-top: 10px;
+               font-size: 12px;
+           }
+        }
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 34px;
+        padding-bottom: 100px;
+        label{
+            width: 100%;
+            span{
+                display: inline-block;
+                font-size: 12px;
+                color: $black;
+                padding: 5px 15px;
+                font-weight: 500;
+            }
+            input{
+               width: 100%;
+               padding: 10px 0;
+                margin-bottom: 10px;
+                border: 1px solid $black;
+                border-radius: 4px;
+                
+            }
+        }
+        button{
+            width: 100%;
+            background-color: $black;
+            color: $white;
+            padding: 16px;
+            border-radius: 98px; 
+            margin-top: 16px;
+        }
+    }
+}
+
+
+
+
+#footer-container{
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    padding-bottom: 16px;
+    z-index: 2000;
+    background-color: $white;
+    .footer-container-navegation{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            padding-top: 15px;
+        }
+    }
+}

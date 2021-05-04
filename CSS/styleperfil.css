@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FEC7D7;
+}
+
+body .perfil-title-container {
+  font-size: 24px;
+  padding: 48px 24px 0px 24px;
+  font-weight: 800;
+  color: #0E172C;
+}
+
+body .perfil-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 45px;
+}
+
+body .perfil-container .img-perfil-container {
+  padding-bottom: 5px;
+}
+
+body .perfil-container .text-perfil-container .title-perfil {
+  font-size: 16px;
+  padding-top: 5px;
+  font-weight: 400;
+}
+
+body .perfil-container .text-perfil-container .edit-perfil {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+body .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 34px;
+  padding-bottom: 100px;
+}
+
+body .form-container label {
+  width: 100%;
+}
+
+body .form-container label span {
+  display: inline-block;
+  font-size: 12px;
+  color: #0E172C;
+  padding: 5px 15px;
+  font-weight: 500;
+}
+
+body .form-container label input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #0E172C;
+  border-radius: 4px;
+}
+
+body .form-container button {
+  width: 100%;
+  background-color: #0E172C;
+  color: #FFFFFE;
+  padding: 16px;
+  border-radius: 98px;
+  margin-top: 16px;
+}
+
+#footer-container {
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  padding-bottom: 16px;
+  z-index: 2000;
+  background-color: #FFFFFE;
+}
+
+#footer-container .footer-container-navegation {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer-container .footer-container-navegation a {
+  padding-top: 15px;
+}
+/*# sourceMappingURL=styleperfil.css.map */

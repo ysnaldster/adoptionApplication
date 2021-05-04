@@ -71,47 +71,31 @@ main{
 }
 
 
-//Pruebas para cards
+//Mascota Cards
 
-.cards_perros{
+.cards-mascotas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 100px;
-    .Chester{
+    .mascota1{
         margin-right: 15px;
+        height: 250px;
+        margin-top: 20px;
     }
-    .Papi{
+    .mascota2{
         padding-top: 50px;
     }
-    .Rocky{
+    .mascota3{
         margin-right: 15px;
+        height: 250px;
     }
-    .Pelusa{
+    .mascota4{
         padding-top: 30px;
     }
 }
 
-.cards_gatos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 100px;
-    .Matilde{
-        margin-right: 15px;
-    }
-    .Pelusa{
-        padding-top: 50px; 
-    }
-    .Kity{
-        margin-right: 15px;
-    }
-    .Bombon{
-        padding-top: 30px;
-    }
-}
 
 
 
@@ -130,48 +114,169 @@ main{
         align-items: center;
         justify-content: space-around;
         a{
-            margin: 24px 0px;
+            padding-top: 15px;
         }
-        .home{
-            background-image: url("/imagenes/home.svg");
-            @include dimensiones();
-        }
-        .home:hover{
-            background-image: none;
-            background-image: url("/imagenes/home_hover.svg");
-            width: 102px;
-            height: 40px;
-        }
-        // .chat{
-        //     background-image: url(/imagenes/chat.svg);
-        //     @include dimensiones();
-        // }
-        // .chat:hover{
-        //     background-image: url(/imagenes/messege.svg);
-        //     width: 124px;
-        //     height: 40px;
-        // }
-        // .love{
-        //     background-image: url(/imagenes/love.svg);
-        //     width: 24px;
-        //     height: 24px;
-        // }
-        // .love:hover{
-        //     background-image: url(/imagenes/favoritos.svg);
-        //     width: 122px;
-        //     height: 40px;
-        // }
-        // .perfil{
-        //     background-image: url(/imagenes/perfil.svg);
-        //     width: 24px;
-        //     height: 24px;
-        // }
-        // .perfil:hover{
-        //     background-image: url(/imagenes/profi.svg);
-        //     width: 98px;
-        //     height: 40px;
-        // }
     }
 }
 
 
+// Descripcion
+
+#body{
+    .back{
+        margin-left: 20px;
+        margin-top: 20px;
+        position: absolute;
+    }
+    b
+    .imagen-grande-mascota{
+        background-color: $white;
+        width: 100%;
+        z-index: -1;
+        img{
+            width: 100%;
+            position: absolute;
+        }
+    }
+    .mascota-container{
+        background-color: $white;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        position: absolute;
+        top: 400px;
+        padding-bottom: 15px;
+        .informacion-container{
+            display: flex;
+            width: 100%;
+            // justify-content: space-around;
+            .title-container{
+                display: flex;
+                padding-left: 24px;
+                div{
+                    font-size: 24px;
+                    padding: 34px 8px 0px 0px;
+                    font-weight: 600;
+                    flex: 2 0 auto;
+                }
+                img{
+                    padding: 32px 2px 15px 0px;
+                }
+            }
+            .icono-favoritos{
+                img{
+                    position: relative;
+                    left: 130px;
+                    top: 15px;
+                }
+            }
+        }
+        .title-container-two{
+            display: flex;
+            padding-left: 24px;
+            padding-top: 30px;
+            .raza-container{
+                display: flex;
+                width: 120px;
+                img{
+                    padding-right: 2px;
+                }
+                div{
+                    font-size: 12px;
+                    color: $grey;
+                    padding-top: 5px;
+                    padding-left: 5px;
+                }
+            }
+            .edad-container{
+                display: flex;
+                padding-left: 40px;
+                .title-container{
+                    font-size: 12px;
+                    padding-top: 5px;
+                    padding-left: 5px;
+                }
+            }
+        }
+        .ubication-container{
+            display: flex;
+            padding-left: 24px;
+            padding-top: 30px;
+            img{
+                padding-right: 10px;
+                padding-bottom: 10px;
+            }
+            div{
+                line-height: 1.5;
+                color: $grey;
+                font-size: 12px;
+            }
+        }
+        .personalidades-container{
+            padding-top: 32px;
+            .personalidad-title{
+                color: $black;
+                font-size: 14px;
+                font-weight: 600;
+                padding-left: 24px;
+                padding-bottom: 8px;
+            }
+            .personalidades-img{
+                padding-left: 24px;
+            }
+        }
+        .description-container{
+            padding-top: 32px;
+            div{
+                color: $black;
+                font-size: 16px;
+                font-weight: 600;
+                padding-left: 24px;
+                padding-bottom: 8px;
+            }
+            p{
+                padding-left: 24px;
+                text-align: start;
+                margin-right: 24px;
+                font-size: 16px;
+                color: $grey;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+.contacto-description{
+    padding-top: 32px;
+    display: flex;
+    .persona-description{
+        display: flex;
+        img{
+            margin-left: 24px;
+            border-radius: 20px;
+            border-bottom: 5px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+            margin-top: 5px;
+            .publicado-por{
+                color: $grey;
+                font-size: 11px;
+            }
+            .name-publicacion{
+                font-size: 14px;
+                color: $black;
+                margin-top: 2px;
+            }
+        }
+    }
+    button{
+        margin-left: 40px;
+        padding: 12px 36px;
+        border-radius: 98px;
+        background-color: $black;
+        color: $white;
+    }
+}
