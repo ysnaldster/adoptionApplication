@@ -2,30 +2,26 @@
 
 // Obtener datos del formulario 
 
-const recibirDatos = () => {
-    let nombre = document.getElementById('nombre');
-    nombre.setAttribute("value", nombre.value);
-    let apellido = document.getElementById('apellido');
-    apellido.setAttribute("value", apellido.value);
-    let correo = document.getElementById('correo');
-    correo.setAttribute("value", correo.value);
-    // let persona = {
-    //     nombre: nombre,
-    //     apellido: apellido,
-    //     correo: correo
-    // }
+const recibirDatos = (e) => {
+    e.preventDefault();
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let correo = document.getElementById('correo').value;
     
-    localStorage.setItem("nombre", nombre.value);
-    localStorage.setItem("apellido", apellido.value);
-    localStorage.setItem("correo", correo.value);
-    // localStorage.setItem("usuario", JSON.stringify(persona));
-    
+    localStorage.setItem("nombre", nombre);
+    localStorage.setItem("apellido", apellido);
+    localStorage.setItem("correo", correo); 
 }
 
+let obtenerNombre = localStorage.getItem("nombre");
+let obtenerApellido = localStorage.getItem("apellido");
+let obtenerCorreo = localStorage.getItem("correo");
+
+document.querySelector('#nombre').setAttribute("value",obtenerNombre);
+document.querySelector('#apellido').setAttribute("value",obtenerApellido);
+document.querySelector('#correo').setAttribute("value",obtenerCorreo);
 
 
 let boton_recibir = document.getElementById('boton-envio');
 boton_recibir.addEventListener("click", recibirDatos);
 
-
-// Uso de localStorage
