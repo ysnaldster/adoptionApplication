@@ -105,17 +105,105 @@ body main .mensaje-container .message-uno-container .imagen-flecha-container {
   padding-top: 15px;
 }
 
-.back-container {
-  display: none;
+.container-mensajes-usuario {
+  height: auto;
 }
 
-.descripcion-container-mensajes {
+.header-info-container {
   background-color: #FFFFFE;
-  position: relative;
-  z-index: -1;
 }
 
-.descripcion-container-mensajes .cabecera-container {
+.header-info-container .information-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px;
+}
+
+.header-info-container .information-container a {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+.header-info-container .information-container .person-title {
+  margin-top: 8px;
+  color: #0E172C;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.conversacion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px;
+  padding-bottom: 390px;
+}
+
+.conversacion-container .hora1 {
+  font-size: 12px;
+  color: #0E172C;
+}
+
+.conversacion-container .mensaje1 {
+  color: #0E172C;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 120px;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 4px;
+}
+
+.conversacion-container .mensaje1 p {
+  color: #0E172C;
+  font-size: 12px;
+}
+
+.conversacion-container .hora2 {
+  font-size: 12px;
+  color: #0E172C;
+  margin-top: 24px;
+}
+
+.conversacion-container .mensaje2 {
+  margin-right: 120px;
+  margin-top: 4px;
+  background-color: #535353;
+  border-radius: 16px;
+}
+
+.conversacion-container .mensaje2 p {
+  padding: 16px;
+  padding-right: 28px;
+  font-size: 12px;
+  color: #FFFFFE;
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,17 +213,15 @@ body main .mensaje-container .message-uno-container .imagen-flecha-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 24px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 8px;
 }
 
-.descripcion-container-mensajes .cabecera-container .person-title {
-  margin: 8px;
-  font-weight: 700;
-  font-size: 16px;
-  color: #0E172C;
+form label {
+  width: 100%;
+}
+
+form label input {
+  width: 100%;
+  padding: 12px 16px;
 }
 /*# sourceMappingURL=mensaje.css.map */
