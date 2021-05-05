@@ -9,6 +9,7 @@ const gatos = []
 
 
 perros.push(new mascota('perro', 'Chester', 'Golden retriever', '3 Meses', './imagenes/masculino.png'), new mascota('perro', 'Papi', 'Chihuahua', '4 Meses', './imagenes/masculino.png'), new mascota('perro', 'Rocky', 'Rottweiler', '5 Meses', './imagenes/masculino.png'), new mascota('perro', 'Pelusa', 'Bichón frisé', '1 Año', './imagenes/femenino.png'));
+
 gatos.push(new mascota('gato', 'Matilde', 'British Shorthair', '6 Meses', './imagenes/femenino.png'), new mascota('gato', 'Pelusa', 'Birmano', '1 Año', './imagenes/femenino.png'), new mascota('gato', 'Kity', 'Bombay', '2 Meses', './imagenes/femenino.png'), new mascota('gato', 'Bombon', 'Gato Americano', '4 Meses', './imagenes/femenino.png'));
 
 // Funciones para opacidad de botones

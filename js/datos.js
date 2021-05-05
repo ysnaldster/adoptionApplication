@@ -4,14 +4,22 @@
 
 const recibirDatos = (e) => {
     e.preventDefault();
-    let nombre = document.getElementById('nombre').value;
-    let apellido = document.getElementById('apellido').value;
-    let correo = document.getElementById('correo').value;
+    let persona = {
+        nombre: "",
+        apellido: "",
+        correo: ""
+    }
+    persona.nombre = document.getElementById('nombre').value;
+    persona.apellido = document.getElementById('apellido').value;
+    persona.correo = document.getElementById('correo').value;
+
+    localStorage.setItem("nombre", persona.nombre);
+    localStorage.setItem("apellido", persona.apellido);
+    localStorage.setItem("correo", persona.correo); 
+    console.log(persona);
     
-    localStorage.setItem("nombre", nombre);
-    localStorage.setItem("apellido", apellido);
-    localStorage.setItem("correo", correo); 
 }
+
 
 let obtenerNombre = localStorage.getItem("nombre");
 let obtenerApellido = localStorage.getItem("apellido");
@@ -24,4 +32,5 @@ document.querySelector('#correo').setAttribute("value",obtenerCorreo);
 
 let boton_recibir = document.getElementById('boton-envio');
 boton_recibir.addEventListener("click", recibirDatos);
+
 

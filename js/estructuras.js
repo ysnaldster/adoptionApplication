@@ -10,6 +10,7 @@ class mascota{
 }
 
 
+
 export default mascota 
 
 
